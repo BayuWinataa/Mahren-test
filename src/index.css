@@ -1,11 +1,19 @@
 @import "tailwindcss";
 
-@theme 
+@theme {
+  --font-display: "Oswald", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
 
-.circle-img {
+@utility circle-img {
   border-radius: 9999px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@utility stroke-text {
+  -webkit-text-stroke: 1.5px #282C37;
+  color: transparent;
 }
