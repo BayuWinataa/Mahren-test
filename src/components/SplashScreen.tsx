@@ -3,7 +3,7 @@ import { useEffect } from "react"
 
 export default function SplashScreen({ onComplete }: { onComplete: () => void }) {
   useEffect(() => {
-    
+
     const timer = setTimeout(() => {
       onComplete()
     }, 2500)
@@ -13,30 +13,30 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden pointer-events-none">
 
-      <motion.div 
+      <motion.div
         initial={{ y: 0 }}
         animate={{ y: "-100%" }}
         transition={{ duration: 0.8, delay: 1.5, ease: [0.76, 0, 0.24, 1] }}
-        className="absolute top-0 left-0 w-full h-[50vh] bg-[#282C37] pointer-events-auto"
+        className="absolute top-0 left-0 w-full h-[50vh] bg-[#010101] pointer-events-auto"
       />
 
-      <motion.div 
+      <motion.div
         initial={{ y: 0 }}
         animate={{ y: "100%" }}
         transition={{ duration: 0.8, delay: 1.5, ease: [0.76, 0, 0.24, 1] }}
-        className="absolute bottom-0 left-0 w-full h-[50vh] bg-[#282C37] pointer-events-auto"
+        className="absolute bottom-0 left-0 w-full h-[50vh] bg-[#010101] pointer-events-auto"
       />
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ 
-          opacity: [0, 1, 1, 0], 
-          scale: [0.95, 1, 1, 1.05] 
+        animate={{
+          opacity: [0, 1, 1, 0],
+          scale: [0.95, 1, 1, 1.05]
         }}
-        transition={{ 
-          duration: 1.5, 
-          times: [0, 0.3, 0.7, 1], 
-          ease: "easeInOut" 
+        transition={{
+          duration: 1.5,
+          times: [0, 0.3, 0.7, 1],
+          ease: "easeInOut"
         }}
         className="absolute z-10 flex items-center justify-center pointer-events-none"
       >
@@ -44,7 +44,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
           MAHREEN IN.
         </h1>
       </motion.div>
-      
+
     </div>
   )
 }

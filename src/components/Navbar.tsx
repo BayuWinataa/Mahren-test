@@ -29,51 +29,51 @@ export default function Navbar() {
       }}
     >
       <div className="w-full border-b-[1.5px] border-[#282C37]/10">
-        <nav className="relative z-50 container mx-auto px-8 md:px-16 lg:px-24 h-24 flex items-center justify-between">
-        
-        <a href="#hero" className="flex flex-col items-center justify-center group">
-          <span className="font-display text-xl md:text-2xl font-bold tracking-widest text-center" style={{ color: scrolled ? "#282C37" : "#F9F4F0" }}>
-            MAHREEN
-          </span>
-          <span className="text-[0.55rem] md:text-[0.65rem] font-body tracking-[0.4em] block -mt-1 md:-mt-1 text-center" style={{ color: "#F88B69" }}>
-            INDONESIA
-          </span>
-        </a>
+        <nav className="relative z-50 container mx-auto  h-24 flex items-center justify-between">
 
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="font-body text-sm relative group transition-colors"
-                style={{ color: "#7C8290" }}
-              >
-                {link.label}
-                <span
-                  className="absolute -bottom-0.5 left-0 w-0 h-px group-hover:w-full transition-all duration-300"
-                  style={{ backgroundColor: "#F88B69" }}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
+          <a href="#hero" className="flex flex-col items-center justify-center group">
+            <span className="font-display text-xl md:text-2xl font-bold tracking-widest text-center" style={{ color: scrolled ? "#282C37" : "#F9F4F0" }}>
+              MAHREEN
+            </span>
+            <span className="text-[0.55rem] md:text-[0.65rem] font-body tracking-[0.4em] block -mt-1 md:-mt-1 text-center" style={{ color: "#F88B69" }}>
+              INDONESIA
+            </span>
+          </a>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden w-10 h-10 rounded-full flex flex-col justify-center items-center gap-1 cursor-pointer z-20 flex-shrink-0 shadow-md"
-          style={{ backgroundColor: "#F88B69" }}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? (
-            <X size={20} color="#FFF" />
-          ) : (
-            <>
-              <span className="w-4 h-[2px] bg-white block rounded-full"></span>
-              <span className="w-4 h-[2px] bg-white block rounded-full"></span>
-              <span className="w-4 h-[2px] bg-white block rounded-full"></span>
-            </>
-          )}
-        </button>
+          <ul className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="font-body text-sm relative group transition-colors"
+                  style={{ color: "#7C8290" }}
+                >
+                  {link.label}
+                  <span
+                    className="absolute -bottom-0.5 left-0 w-0 h-px group-hover:w-full transition-all duration-300"
+                    style={{ backgroundColor: "#F88B69" }}
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden w-10 h-10 rounded-full flex flex-col justify-center items-center gap-1 cursor-pointer z-20 flex-shrink-0 shadow-md"
+            style={{ backgroundColor: "#F88B69" }}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? (
+              <X size={20} color="#FFF" />
+            ) : (
+              <>
+                <span className="w-4 h-[2px] bg-white block rounded-full"></span>
+                <span className="w-4 h-[2px] bg-white block rounded-full"></span>
+                <span className="w-4 h-[2px] bg-white block rounded-full"></span>
+              </>
+            )}
+          </button>
         </nav>
       </div>
 
@@ -113,7 +113,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="relative overflow-hidden px-8 py-3 font-display text-3xl font-medium tracking-wide block text-center transition-colors duration-300 group text-[#282C37] hover:text-[#F9F4F0] rounded-full"
               >
-                
+
                 <div className="absolute inset-0 bg-[#F88B69] origin-right scale-x-0 transition-transform duration-500 ease-in-out group-hover:origin-left group-hover:scale-x-100 -z-10" />
                 <span className="relative z-10">{link.label}</span>
               </a>

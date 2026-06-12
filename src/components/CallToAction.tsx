@@ -4,8 +4,7 @@ import { ArrowRight } from "lucide-react"
 export default function CallToAction() {
   return (
     <section id="cta" className="relative z-20 w-full min-h-screen flex items-center border-t-[1.5px] border-[#282C37]" style={{ backgroundColor: "#F9F4F0" }}>
-      <div className="container mx-auto px-8 md:px-16 lg:px-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center py-20">
-
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center py-20 px-4">
         <div className="flex flex-col gap-8 md:gap-12 pr-0 lg:pr-12">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}

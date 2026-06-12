@@ -4,19 +4,18 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden w-full px-6 py-20"
-      style={{ backgroundColor: "var(--color-bg)" }}
+      className="relative h-[100dvh] flex flex-col justify-center items-center overflow-hidden w-full px-6 py-20"
+      style={{ backgroundColor: "#050506ff" }}
     >
-      
       <div
         className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none mix-blend-overlay"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
         }}
       />
-      
-      <div className="relative z-10 flex flex-col items-center justify-center text-center mt-12 container mx-auto px-8 md:px-16 lg:px-24">
-        
+
+      <div className="relative z-10 flex flex-col items-center justify-center text-center mt-12 container mx-auto ">
+
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,8 +28,8 @@ export default function Hero() {
             lineHeight: 0.85,
           }}
         >
-          <span className="block">BERKARYA UNTUK</span>
-          <span className="block relative inline-block">
+          <span className="block text-[#F88B69] font-semibold">BERKARYA UNTUK</span>
+          <span className="block relative inline-block text-[#F88B69] font-semibold">
             INDONESIA
             <motion.img
               initial={{ opacity: 0, rotate: -20, scale: 0.5 }}
