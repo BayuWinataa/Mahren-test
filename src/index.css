@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme 
+
+.circle-img {
+  border-radius: 9999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
